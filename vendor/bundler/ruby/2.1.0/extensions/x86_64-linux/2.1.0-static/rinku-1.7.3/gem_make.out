@@ -1,0 +1,30 @@
+/home/vagrant/.rbenv/versions/2.1.2/bin/ruby extconf.rb 
+creating Makefile
+
+make "DESTDIR=" clean
+make: 警告: ファイル `Makefile' の修正時刻が 0.36 秒分未来の時刻です
+make: 警告:  時刻のずれを検出. 不完全なビルド結果になるかもしれません.
+
+make "DESTDIR="
+make: 警告: ファイル `Makefile' の修正時刻が 0.35 秒分未来の時刻です
+compiling autolink.c
+compiling buffer.c
+compiling rinku.c
+rinku.c: In function ‘rinku_autolink’:
+rinku.c:263: 警告: pointer targets in passing argument 2 of ‘print_link’ differ in signedness
+rinku.c:89: note: expected ‘const char *’ but argument is of type ‘uint8_t *’
+rinku.c:200: 警告: unused variable ‘link_url_cb’
+rinku.c: In function ‘autolink_callback’:
+rinku.c:296: 警告: pointer targets in passing argument 1 of ‘rb_str_new’ differ in signedness
+/home/vagrant/.rbenv/versions/2.1.2/include/ruby-2.1.0/ruby/intern.h:704: note: expected ‘const char *’ but argument is of type ‘uint8_t * const’
+rinku.c: In function ‘rb_rinku_autolink’:
+rinku.c:449: 警告: pointer targets in passing argument 2 of ‘rinku_autolink’ differ in signedness
+rinku.c:186: note: expected ‘const uint8_t *’ but argument is of type ‘char *’
+rinku.c:454: 警告: pointer targets in passing argument 1 of ‘rb_str_new’ differ in signedness
+/home/vagrant/.rbenv/versions/2.1.2/include/ruby-2.1.0/ruby/intern.h:704: note: expected ‘const char *’ but argument is of type ‘uint8_t *’
+linking shared-object rinku.so
+make: 警告:  時刻のずれを検出. 不完全なビルド結果になるかもしれません.
+
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 rinku.so ./.gem.20150319-3929-y44zfx
+installing default rinku libraries

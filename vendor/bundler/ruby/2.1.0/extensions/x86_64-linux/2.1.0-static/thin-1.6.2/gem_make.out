@@ -1,0 +1,26 @@
+/home/vagrant/.rbenv/versions/2.1.2/bin/ruby extconf.rb 
+checking for main() in -lc... yes
+creating Makefile
+
+make "DESTDIR=" clean
+make: 警告: ファイル `Makefile' の修正時刻が 0.15 秒分未来の時刻です
+make: 警告:  時刻のずれを検出. 不完全なビルド結果になるかもしれません.
+
+make "DESTDIR="
+make: 警告: ファイル `Makefile' の修正時刻が 0.13 秒分未来の時刻です
+compiling parser.c
+compiling thin.c
+thin.c: In function ‘Thin_HttpParser_alloc’:
+thin.c:242: 警告: implicit declaration of function ‘thin_http_parser_init’
+thin.c: In function ‘Thin_HttpParser_finish’:
+thin.c:294: 警告: implicit declaration of function ‘thin_http_parser_finish’
+thin.c:296: 警告: implicit declaration of function ‘thin_http_parser_is_finished’
+thin.c: In function ‘Thin_HttpParser_execute’:
+thin.c:334: 警告: implicit declaration of function ‘thin_http_parser_execute’
+thin.c:338: 警告: implicit declaration of function ‘thin_http_parser_has_error’
+linking shared-object thin_parser.so
+make: 警告:  時刻のずれを検出. 不完全なビルド結果になるかもしれません.
+
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 thin_parser.so ./.gem.20150319-3929-vsoue1
+installing default thin_parser libraries

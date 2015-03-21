@@ -1,0 +1,7 @@
+== README
+
+Ruby On Rails で作ったブログサービスのサンプルです。
+
+== TODO
+
+Test...

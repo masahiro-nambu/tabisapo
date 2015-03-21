@@ -1,0 +1,44 @@
+/home/vagrant/.rbenv/versions/2.1.2/bin/ruby extconf.rb 
+checking for main() in -lpthread... yes
+creating Makefile
+
+make "DESTDIR=" clean
+make: 警告: ファイル `Makefile' の修正時刻が 0.14 秒分未来の時刻です
+make: 警告:  時刻のずれを検出. 不完全なビルド結果になるかもしれません.
+
+make "DESTDIR="
+make: 警告: ファイル `Makefile' の修正時刻が 0.11 秒分未来の時刻です
+compiling accessor.cc
+compiling array.cc
+compiling backref.cc
+compiling constants.cc
+compiling constraints.cc
+compiling context.cc
+compiling date.cc
+compiling exception.cc
+compiling external.cc
+compiling function.cc
+compiling gc.cc
+compiling handles.cc
+compiling heap.cc
+compiling init.cc
+compiling invocation.cc
+compiling locker.cc
+compiling message.cc
+compiling object.cc
+compiling primitive.cc
+compiling rr.cc
+compiling script.cc
+compiling signature.cc
+compiling stack.cc
+compiling string.cc
+compiling template.cc
+compiling trycatch.cc
+compiling v8.cc
+compiling value.cc
+linking shared-object v8/init.so
+make: 警告:  時刻のずれを検出. 不完全なビルド結果になるかもしれません.
+
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 init.so ./.gem.20150319-3929-1frzng9/v8
+installing default init libraries

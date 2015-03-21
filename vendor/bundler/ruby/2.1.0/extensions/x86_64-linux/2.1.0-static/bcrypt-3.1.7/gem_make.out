@@ -1,0 +1,23 @@
+/home/vagrant/.rbenv/versions/2.1.2/bin/ruby extconf.rb 
+checking for ruby/util.h... yes
+creating Makefile
+
+make "DESTDIR=" clean
+make: 警告: ファイル `Makefile' の修正時刻が 1.1 秒分未来の時刻です
+make: 警告:  時刻のずれを検出. 不完全なビルド結果になるかもしれません.
+
+make "DESTDIR="
+make: 警告: ファイル `Makefile' の修正時刻が 1 秒分未来の時刻です
+compiling bcrypt_ext.c
+compiling crypt.c
+compiling crypt_blowfish.c
+compiling crypt_gensalt.c
+compiling wrapper.c
+linking shared-object bcrypt_ext.so
+make: 警告:  時刻のずれを検出. 不完全なビルド結果になるかもしれません.
+
+make "DESTDIR=" install
+make: 警告: ファイル `bcrypt_ext.so' の修正時刻が 0.85 秒分未来の時刻です
+/usr/bin/install -c -m 0755 bcrypt_ext.so ./.gem.20150319-3929-1pzebn4
+installing default bcrypt_ext libraries
+make: 警告:  時刻のずれを検出. 不完全なビルド結果になるかもしれません.

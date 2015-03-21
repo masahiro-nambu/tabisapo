@@ -1,0 +1,1 @@
+{"virtualbox":{"/var/www/html":{"guestpath":"/var/www/html","hostpath":"/Users/masahironambu/projects/sampleblog","disabled":false},"/vagrant":{"guestpath":"/vagrant","hostpath":"/Users/masahironambu/projects/sampleblog","disabled":false}}}

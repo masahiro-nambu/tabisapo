@@ -1,0 +1,50 @@
+/home/vagrant/.rbenv/versions/2.1.2/bin/ruby extconf.rb 
+creating Makefile
+
+make "DESTDIR=" clean
+make: 警告: ファイル `Makefile' の修正時刻が 0.36 秒分未来の時刻です
+make: 警告:  時刻のずれを検出. 不完全なビルド結果になるかもしれません.
+
+make "DESTDIR="
+make: 警告: ファイル `Makefile' の修正時刻が 0.34 秒分未来の時刻です
+compiling autolink.c
+compiling buffer.c
+compiling houdini_href_e.c
+compiling houdini_html_e.c
+compiling html.c
+html.c: In function ‘rndr_header’:
+html.c:290: 警告: passing argument 1 of ‘header_anchor’ discards qualifiers from pointer target type
+html.c:268: note: expected ‘struct buf *’ but argument is of type ‘const struct buf *’
+html.c: In function ‘toc_header’:
+html.c:638: 警告: passing argument 1 of ‘header_anchor’ discards qualifiers from pointer target type
+html.c:268: note: expected ‘struct buf *’ but argument is of type ‘const struct buf *’
+compiling html_smartypants.c
+html_smartypants.c: In function ‘squote_len’:
+html_smartypants.c:92: 警告: initialization discards qualifiers from pointer target type
+html_smartypants.c:92: 警告: initialization discards qualifiers from pointer target type
+html_smartypants.c:92: 警告: initialization discards qualifiers from pointer target type
+html_smartypants.c:92: 警告: initialization discards qualifiers from pointer target type
+html_smartypants.c: In function ‘smartypants_squote’:
+html_smartypants.c:137: 警告: 符合付きと符合無しの整数式同士の比較です
+html_smartypants.c: In function ‘smartypants_cb__amp’:
+html_smartypants.c:232: 警告: ISO C90 forbids mixed declarations and code
+compiling markdown.c
+markdown.c: In function ‘char_link’:
+markdown.c:1042: 警告: ISO C90 forbids mixed declarations and code
+markdown.c:1082: 警告: ISO C90 forbids mixed declarations and code
+markdown.c: In function ‘sd_markdown_render’:
+markdown.c:2812: 警告: ISO C90 forbids mixed declarations and code
+markdown.c: トップレベル:
+markdown.c:90: 警告: ‘char_underline’ declared ‘static’ but never defined
+markdown.c:91: 警告: ‘char_highlight’ declared ‘static’ but never defined
+compiling rc_markdown.c
+compiling rc_render.c
+compiling stack.c
+linking shared-object redcarpet.so
+make: 警告:  時刻のずれを検出. 不完全なビルド結果になるかもしれません.
+
+make "DESTDIR=" install
+make: 警告: ファイル `redcarpet.so' の修正時刻が 0.47 秒分未来の時刻です
+/usr/bin/install -c -m 0755 redcarpet.so ./.gem.20150319-3929-1j1qbvk
+installing default redcarpet libraries
+make: 警告:  時刻のずれを検出. 不完全なビルド結果になるかもしれません.

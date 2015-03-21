@@ -1,0 +1,17 @@
+/home/vagrant/.rbenv/versions/2.1.2/bin/ruby extconf.rb 
+
+make "DESTDIR=" clean
+make: 警告: ファイル `Makefile' の修正時刻が 1 秒分未来の時刻です
+make: *** ターゲット `clean' を make するルールがありません.  中止.
+
+make "DESTDIR="
+make: 警告: ファイル `Makefile' の修正時刻が 1 秒分未来の時刻です
+echo "Nada."
+Nada.
+make: 警告:  時刻のずれを検出. 不完全なビルド結果になるかもしれません.
+
+make "DESTDIR=" install
+make: 警告: ファイル `Makefile' の修正時刻が 1 秒分未来の時刻です
+echo "Nada."
+Nada.
+make: 警告:  時刻のずれを検出. 不完全なビルド結果になるかもしれません.

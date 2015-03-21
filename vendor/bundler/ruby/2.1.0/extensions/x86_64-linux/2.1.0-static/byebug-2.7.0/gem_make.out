@@ -1,0 +1,22 @@
+/home/vagrant/.rbenv/versions/2.1.2/bin/ruby extconf.rb 
+creating Makefile
+
+make "DESTDIR=" clean
+make: 警告: ファイル `Makefile' の修正時刻が 1 秒分未来の時刻です
+make: 警告:  時刻のずれを検出. 不完全なビルド結果になるかもしれません.
+
+make "DESTDIR="
+make: 警告: ファイル `Makefile' の修正時刻が 1 秒分未来の時刻です
+compiling breakpoint.c
+compiling byebug.c
+compiling context.c
+compiling locker.c
+compiling threads.c
+linking shared-object byebug/byebug.so
+make: 警告:  時刻のずれを検出. 不完全なビルド結果になるかもしれません.
+
+make "DESTDIR=" install
+make: 警告: ファイル `Makefile' の修正時刻が 0.046 秒分未来の時刻です
+/usr/bin/install -c -m 0755 byebug.so ./.gem.20150319-3929-lw54tj/byebug
+installing default byebug libraries
+make: 警告:  時刻のずれを検出. 不完全なビルド結果になるかもしれません.
